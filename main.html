@@ -7,8 +7,60 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+<form method="get">
+	<table border="1">
+		<tr>
+			<td>
+	<label for="name">Name</label></td>
+			<td>
+	<input type="text" id="name">
+			</td>
+			</tr>
+<tr>	
+	<td><label for="email">Email</label></td>
+	<td>
+	<input type="email" id="email" required>
+	</td>
+</tr>
+		<tr>
+			<td>
+				<label>Gender</label>
+			</td>
+			<td>
+		<label><input type="radio" name="gender" value="Male" required>Male</label>
+	<label><input type="radio" name="gender" value="Female" required>Female</label>
+			</td></tr>
+		<tr>
+			<td>
+		<label for="carbrands">Car Brands</label></td>
+			<td>
+			<select name="Car Brands" id="carbrands">
+				<option value="BMW">BMW</option>
+				<option value="Audi">Audi</option>
+				<option value="Mercedez">Mercedez</option>
+			</select></td></tr>
+		<tr>
+			<td>
+				<label for="carage">Car Age</label></td>
+			<td>
+				<input type="number" id="carage" required></td></tr>
+		<tr>
+			<td>
+				<label for="dop">Date of Purchase</label>
+			</td>
+			<td>
+				<input type="date" id="dop" required></td></tr>
+		<tr>
+			<td>
+				<label for="paswrd">Password</label></td>
+			<td>
+				<input type="password" id="paswrd" required></td></tr>
+		<tr>
+			<td colspan="2" >
+				<button type="submit">Submit</button></td></tr>
+	</table>
+</form>
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
